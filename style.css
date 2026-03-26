@@ -1,0 +1,217 @@
+/* The fonts */
+
+.dancing-script-normal {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Shared style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --main-colour: rgba(230, 83, 60, 1);
+    --main-text-colour: rgba(255, 255, 255, 1);
+    --p-text-colour: rgba(255, 255, 255, 0.5);
+}
+
+.body-colour{
+    background-color: #111111;
+}
+
+.display-flex{
+    display: flex;
+}
+
+
+/* The main orange button */
+.btn-primary, .diff-btn{
+    width: 224px;
+    height: 54px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--main-colour);
+    margin-top: 30px;
+    font-size: 18px;
+    color: var(--main-text-colour);
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+
+/* The banner transparent button */
+ .diff-btn{
+    background-color: transparent;
+    border: 3px solid #333333;
+ }
+
+
+/* Header */
+
+.bg-colour{
+  background:  linear-gradient(180deg, #111111 0%, #333333 50%, #111111 100%);
+  height: 716px;
+  width: 100%;
+  opacity: 100%;
+  
+}
+
+.p-design{
+    color: var(--p-text-colour);
+    margin-top: 10px;
+}
+
+.h-design{
+    color: var(--main-text-colour);
+    font-weight: 900;
+    font-size: 48px;
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+    height:140px;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.nav-logo{
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 120%;
+    color: var(--main-colour)
+}
+
+.nav-list{
+    width: 465px;
+    height: 46px;
+    display: flex;
+    border: 2px solid #333333;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 18px;
+    color: var(--main-text-colour);
+    gap: 0px;
+}
+
+.home{
+    background-color: var(--main-colour);
+    border-radius: 50px;
+    width: 100px;
+    height: 41px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+/* Banner styles */
+
+.banner-container{
+    width: 1060px;
+    height: 575px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 238px;
+}
+
+.banner-content{
+    width: 650px;
+    height: 440px;
+    padding: 60px;
+    
+}
+
+.banner-content h1{
+    font-size: 78px;
+    font-weight: 1000;
+    color: var(--main-text-colour);
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+
+.banner-content span{
+    font-weight: 100;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+
+.transparent-1{
+     width: 206px;
+    height: 96px;
+    background-color: pink;
+    margin-top: 140px;
+    margin-left: 1180px;
+}
+
+/* habits section */
+.habits{
+    width: 1060px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.habits-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.habit-card img{
+    border-radius: 50%;
+    border: 2px solid var(--p-text-colour);
+}
+
+.habit-card h4{
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--main-text-colour)
+}
+
+.run-extra-container{
+    width: 1060px;
+    height: 371px;
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.run-extra-content{
+    width: 443px;
+    height: 290px;
+    padding-left: 50px;
+}
+
+.run-extra-container img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    border: 1px solid  #222222;
+    margin-right: 50px;
+}
