@@ -156,7 +156,6 @@
     width: 650px;
     height: 440px;
     padding: 60px;
-    
 }
 
 .banner-content h1{
@@ -174,19 +173,49 @@
     font-style: normal;
 }
 
-.transparent-1{
-     width: 206px;
-    height: 96px;
-    background-color: pink;
-    margin-top: 140px;
-    margin-left: 1180px;
+.banner-img{
+    position: relative;
+}
+
+.banner-img img{
+    width: 100%;
+    display: block;
+}
+
+.badge{
+    position: absolute;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px 20px;
+    color: white;
+    border: 2px solid #333333;
+}
+
+.badge-1{
+    top: 120px;
+    left: 260px;
+}
+
+.badge-2{
+    bottom: 100px;
+    left: 10px;
+}
+
+.dot{
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-colour);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 /* habits section */
 .habits{
     width: 1060px;
     height: 500px;
-    margin: 0 auto;
+    margin: 0px auto;
     text-align: center;
     padding-top: 40px;
 }
@@ -486,6 +515,17 @@ footer{
     color:var(--p-text-colour);
 }
 
+.copyright{
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    border-top: 2px solid #333333;
+}
+
+
 /* Responsive */
 @media screen and (max-width: 576px) {
 
@@ -542,7 +582,7 @@ footer{
 
     .habits{
         width: 100%;
-        margin-top: 460px;
+        margin-top: 760px;
     }
     .habits-container, .run-extra-container{
         flex-direction: column;
@@ -625,5 +665,10 @@ footer{
        grid-template-columns: repeat(1, 1fr);
        margin-left: 40px;
        margin-right: 40px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 20px;
     }
 }
