@@ -50,6 +50,7 @@
     font-weight: bold;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 /* The banner transparent button */
@@ -71,7 +72,7 @@
 
 .p-design{
     color: var(--p-text-colour);
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .h-design{
@@ -85,9 +86,10 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    width: 1060px;
+    max-width: 1060px;
+    width: 100%;
     height:140px;
-    margin: 0px auto;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -95,7 +97,7 @@
     font-size: 50px;
     font-weight: bolder;
     line-height: 120%;
-    color: var(--main-colour)
+    color: var(--main-colour);
 }
 
 .nav-list{
@@ -105,11 +107,15 @@
     border: 2px solid #333333;
     justify-content: space-between;
     padding-right: 20px;
-    align-items: center;
+    align-items: center; 
     border-radius: 50px;
     font-size: 18px;
     color: var(--main-text-colour);
     gap: 0px;
+}
+
+ a{
+     color: var(--main-text-colour);
 }
 
 .home{
@@ -121,15 +127,29 @@
     padding-top: 7px;
 }
 
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+}
+
 /* Banner styles */
 
 .banner-container{
-    width: 1060px;
+    max-width: 1060px;
+    width: 100%;
     height: 575px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    margin-left: 238px;
 }
 
 .banner-content{
@@ -153,9 +173,6 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
-
-
-
 
 .transparent-1{
      width: 206px;
@@ -182,12 +199,12 @@
 
 .habit-card img{
     border-radius: 50%;
-    border: 2px solid var(--p-text-colour);
+    border: 4px solid #222222;
 }
 
 .habit-card h4{
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 20px;
     color: var(--main-text-colour)
 }
 
@@ -214,4 +231,399 @@
     border-radius: 18px;
     border: 1px solid  #222222;
     margin-right: 50px;
+}
+
+.excercise{
+    width: 1060px;
+    height: 581px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+}
+
+.card{
+    background-color: olivedrab;
+    height: 200px;
+    display: flex;
+    align-items: end;
+    padding: 10px;
+    color: white;
+    
+}
+
+.card1{
+   grid-column: span 1;
+   background: linear-gradient(rgba(6,255,210,0.5), rgba(6,255,210,0.5)),
+    url("images/exercise1.jpg") center;
+}
+
+.card2{
+    grid-column: span 2;
+    background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)),
+    url("images/exercise2.png") center;
+}
+
+.card3{
+   grid-column: span 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/exercise3.png") center;
+}
+
+.card4{
+   grid-column: span 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/exercise4.png") center;
+}
+
+.card5{
+   grid-column: span 1;
+    background: linear-gradient(rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)),
+    url("images/exercise5.jpg") center;
+}
+
+.card6{
+    grid-column: span 1;
+    background: linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)),
+    url("images/exercise6.jpg") center;
+}
+
+
+
+.card p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.plan{
+    max-width: 1050px;
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plan-container{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.plan-card{
+    background-color: #222222;
+    max-width: 340px;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.plan-card img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.bmi{
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.bmi-div{
+    width: 100%;
+    height: 486px;
+    background-color: #222222;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bmi-container{
+    max-width: 1060px;
+    width: 100%;
+    height:400px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart{
+    width: 310px;
+    height: 366px;
+}
+
+.calc{
+    max-width: 577px;
+    width: 100%;
+    height: 400px;
+}
+
+table, th, td {
+  border: 2px solid #333333;
+  border-collapse: collapse;
+  padding: 19px;
+}
+
+th{
+    color: white;
+}
+
+td{
+    color: var(--p-text-colour);
+}
+
+table{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+input, select{
+    padding: 20px;
+    background-color: #444444;
+    border: none;
+    border-radius: 15px;
+    color: #888888;
+    font-size: 15px;
+}
+
+
+.team{
+    max-width: 1060px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.team-card{
+    height: 200px;
+    position: relative;
+    
+}
+
+.team-card h4, .team-card p{
+   position: absolute;
+   left: 15%;
+}
+
+.team-card h4{
+    bottom: 35px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.team-card p{
+    bottom: 15px;
+    font-size: 15px;
+}
+
+.team-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+    padding: 30px;
+    background-color: #222222;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+
+
+.card-style{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    width: 100%;
+    background-color: #222222;
+    padding: 40px;
+}
+
+.footer-container{
+    max-width: 1060px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.get-started1, .get-started2{
+    padding: 10px;
+}
+
+#li-top{
+    color: var(--main-text-colour);
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.li-p{
+    margin-bottom: 10px;
+    color:var(--p-text-colour);
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+
+    * {
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
+       /* outline: 1px solid red; */
+      }
+
+    /* For header part */
+    .nav-list{
+        width: 100%;
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .nav-logo{
+        margin-left: 30px;
+    }
+    .banner-container{
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .banner-content{
+        max-width: 100%;
+        margin: 0 ;
+        padding-left: 30px;
+    }
+    .banner-content h1{
+        font-size: 40px;
+    }
+
+    .h-design{
+        font-size: 40px;
+    }
+
+    .btn-container{
+        display: flex;
+        gap: 10px;
+    }
+
+    .banner-container img{
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .habits{
+        width: 100%;
+        margin-top: 460px;
+    }
+    .habits-container, .run-extra-container{
+        flex-direction: column;
+    }
+
+    .habit-card p{
+        margin-bottom: 20px;
+    }
+
+    .run-extra-container{
+        width: calc(100% - 50px);
+        height: 650px;
+        margin-top: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .run-extra-content{
+        margin-right: 25px;
+    }
+
+    .excercise{
+        width: 100%;
+        margin-top: 60px ;
+        padding: 20px;
+        
+    }
+
+    .img-container{
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card{
+        grid-column: span 1;
+    }
+
+    .plan{
+    margin: 340px auto;
+   }
+
+    .plan-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .bmi{
+        margin-top: 1100px;
+        width: 100%;
+    }
+
+    .bmi-container{
+        flex-direction: column;
+    }
+
+    .bmi-div{
+        height: 890px;
+    }
+
+    .chart{
+        margin-left: 50px;
+    }
+   
+    .calc{
+        width: 100%;
+        margin-top: 40px;
+    } 
+
+    input, select{
+        width: 90%;
+    }
+
+    .team{
+        margin-top: 450px;
+    }
+
+    .team-img-container{
+       grid-template-columns: repeat(1, 1fr);
+       margin-left: 40px;
+       margin-right: 40px;
+    }
 }
